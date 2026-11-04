@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portfolio-page">
+    <div class="portfolio-layout">
+
+    <aside class="left-sidebar">
+
+        <h2>🎓 Student Zone</h2>
+
+        <hr>
+
+        <h3>Welcome!</h3>
+        <p>Every student has a unique journey.</p>
+
+        <div class="side-card">
+            <h4>🌟 Our Mission</h4>
+            <p>Learn new skills and build a successful future.</p>
+        </div>
+
+        <div class="side-card">
+            <h4>💡 Daily Motivation</h4>
+            <p>"Success comes from hard work and dedication."</p>
+        </div>
+
+        <div class="side-card">
+            <h4>🚀 Keep Learning</h4>
+            <p>Dream Big. Work Hard. Achieve More.</p>
+        </div>
+
+    </aside>
+    <main class="portfolio-box">
+        <h1>🎓Student Portfolio Manager</h1>
+        <p>Add and manage student portfolio details.</p>
+
+        <form id="studentForm">
+            <div class="name-photo-row">
+                <div class="name-field">
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name" placeholder="Student name" required>
+                </div>
+                <div class="photo-field">
+                    <label for="photo">Profile Picture</label>
+                    <input type="file" id="photo" accept="image/jpeg,image/png,image/gif,image/webp">
+                    <small>JPG, PNG, GIF or WEBP (maximum 20 MB).</small>
+                </div>
+            </div>
+
+            <label for="course">Course</label>
+            <input type="text" id="course" placeholder="Course" required>
+
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" placeholder="Example: HTML, CSS, C Programming" required>
+
+            <label for="achievement">Achievement</label>
+            <input type="text" id="achievement" placeholder="Achievement">
+
+            <button type="submit" id="saveButton">Add Student</button>
+        </form>
+
+        <p id="status"></p>
+        <h2>Student Details</h2>
+        <div id="studentList"></div>
+        <button type="button" onclick="logout()">Logout</button>
+    </main>
+<aside class="right-sidebar">
+
+    <h2>✨ Quick Tips</h2>
+
+    <hr>
+
+    <div class="side-card">
+        <h3>📚 Improve Skills</h3>
+        <p>Practice HTML, CSS and JavaScript every day.</p>
+    </div>
+
+    <div class="side-card">
+        <h3>🏆 Achievements</h3>
+        <p>Record your certificates, projects and awards.</p>
+    </div>
+
+    <div class="side-card">
+        <h3>🎯 Goals</h3>
+        <p>Set your goals and work towards your dreams.</p>
+    </div>
+
+    <div class="side-card">
+        <h3>💻 Technology</h3>
+        <p>Explore new technologies and improve your knowledge.</p>
+    </div>
+
+</aside>
+
+</div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
